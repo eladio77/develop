@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-        <record id="library_checkout_form_view" model="ir.ui.view">
-            <field name="name">library_checkout_form</field>
-            <field name="model">library.checkout</field>
-            <field name="arch" type="xml">
-                <form string="Checkout Form">
-                    <sheet>
-                        <group>
-                            <field name="member_id"/>
-                            <field name="request_date"/>
-                            <field name="member_id"/>
-                        </group>
-                        <notebook>
-                            <page name="lines">
-                                <field name="line_ids">
-                                    <tree editable="botton">
-                                        <field name="book_id"/>
-                                        <field name="note"/>
-                                    </tree>
-                                </field>
-                            </page>
-                        </notebook>
-                    </sheet>
+    <record id="library_checkout_form_view" model="ir.ui.view">
+        <field name="name">library_checkout_form</field>
+        <field name="model">library.checkout</field>
+        <field name="arch" type="xml">
+            <form string="Checkout Form">
+                <sheet>
+                    <group>
+                        <field name="member_id"/>
+                        <field name="request_date"/>
+                        <field name="member_id"/>
+                    </group>
+
+                    <notebook>
+                        <page name="lines">
+                            <field name="line_ids">
+                                <tree editable="botton">
+                                    <field name="book_id"/>
+                                    <field name="note"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
                 </form>
-            </field>
+        </field>
         </record>
 
-        <record id="library_checkout_tree_view" model="ir.ui.view">
-            <field name="name">library_checkout_tree</field>
-            <field name="model">library.checkout</field>
-            <field name="arch" type="xml">
-                <tree string="Checkout Tree">
-                    <field name="request_date"/>
-                    <field name="member_id"/>
-                </tree>
-            </field>
-        </record>
+    <record id="library_checkout_tree_view" model="ir.ui.view">
+        <field name="name">library_checkout_tree</field>
+        <field name="model">library.checkout</field>
+        <field name="arch" type="xml">
+            <tree string="Checkout Tree">
+                <field name="request_date"/>
+                <field name="member_id"/>
+            </tree>
+        </field>
+    </record>
 
 </odoo>
 
