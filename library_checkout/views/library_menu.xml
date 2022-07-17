@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="library_checkout_form_view" model="ir.ui.view">
+            <field name="name">library_checkout_form</field>
+            <field name="model">library.checkout</field>
+            <field name="arch" type="xml">
+                <form string="Checkout Form">
+                    <sheet>
+                        <group>
+                            <field name="member_id"/>
+                            <field name="request_date"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="library_checkout_tree_view" model="ir.ui.view">
+            <field name="name">library_checkout_tree</field>
+            <field name="model">library.checkout</field>
+            <field name="arch" type="xml">
+                <tree string="Checkout Tree">
+                    <field name="request_date"/>
+                    <field name="member_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="library_checkout_act_window" model="ir.actions.act_window">
+            <field name="name">Library Checkout</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">library.checkout</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Checkout" id="library_checkout_menu" parent="library_app.menu_library" action="action_library_checkout_act_window"/>
+
+    </data>
+</odoo>
