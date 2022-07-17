@@ -1,7 +1,7 @@
 from odoo import fields, models, api
 
 
-class ModelName(models.Model):
+class LibraryCheckout(models.Model):
     _name = 'library.checkout'
     _description = 'Checkout request'
 
@@ -11,7 +11,7 @@ class ModelName(models.Model):
 
     user_id = fields.Many2one(
         "res.users", "Libreria",
-        default=lambda s: s.env.user,
+        default=lambda s: s.env.user
     )
 
     request_date = fields.Date(default=lambda s: fields.Date.today())
