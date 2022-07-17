@@ -10,6 +10,16 @@
                             <field name="member_id"/>
                             <field name="request_date"/>
                         </group>
+                        <notebook>
+                            <page name="lines">
+                                <field name="line_ids">
+                                    <tree editable="botton">
+                                        <field name="book_id"/>
+                                        <field name="note"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

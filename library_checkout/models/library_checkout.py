@@ -15,3 +15,9 @@ class Checkout(models.Model):
     )
 
     request_date = fields.Date(default=lambda s: fields.Date.today())
+
+    lines_id = fields.One2many(
+        comodel_name='library.checkout.line',
+        inverse_name='checkout_id',
+        string='Borrowed Books',
+        required=False)
