@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-        <record id="action_library_checkout_act_window" model="ir.actions.act_window">
-            <field name="name">Library Checkout</field>
-            <field name="type">ir.actions.act_window</field>
-            <field name="res_model">library.checkout</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+    <record id="action_library_checkout_act_window" model="ir.actions.act_window">
+        <field name="name">Library Checkout</field>
+        <field name="model">ir.actions.act_window</field>
+        <field name="res_model">library.checkout</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
-        <menuitem name="Checkout" id="library_checkout_menu" parent="library_app.menu_library" action="action_library_checkout_act_window"/>
+    <menuitem name="Checkout" id="library_checkout_menu" parent="library_app.menu_library" action="action_library_checkout_act_window"/>
 </odoo>
