@@ -6,7 +6,7 @@
     'category': 'Category',
     'author': 'Eladio G',
     'website': 'Website',
-    'license': 'License',
+    "license": "AGPL-3",
     'depends': ['library_member'],
     'data': [
         "security/ir.model.access.csv",
