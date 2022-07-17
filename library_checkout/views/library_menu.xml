@@ -28,7 +28,7 @@
             </field>
         </record>
 
-        <record id="library_checkout_act_window" model="ir.actions.act_window">
+        <record id="action_library_checkout_act_window" model="ir.actions.act_window">
             <field name="name">Library Checkout</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">library.checkout</field>

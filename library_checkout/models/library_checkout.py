@@ -1,8 +1,8 @@
 from odoo import fields, models, api
 
 
-class LibraryCheckout(models.Model):
-    _name = 'library.checkout'
+class Checkout(models.Model):
+    _name = "library.checkout"
     _description = 'Checkout request'
 
     member_id = fields.Many2one(
