@@ -9,4 +9,6 @@ class Checkoutline(models.Model):
         comodel_name='library.checkout',
         required=True)
 
+    book_id = fields.Many2one("library.book", required=True)
+
     note = fields.Char("Notes")
