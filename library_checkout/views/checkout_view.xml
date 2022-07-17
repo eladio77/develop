@@ -9,6 +9,7 @@
                         <group>
                             <field name="member_id"/>
                             <field name="request_date"/>
+                            <field name="member_id"/>
                         </group>
                         <notebook>
                             <page name="lines">
