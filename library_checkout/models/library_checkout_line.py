@@ -9,4 +9,4 @@ class Checkoutline(models.Model):
         comodel_name='library.checkout',
         required=True)
 
-    book_id = fields.Char("Notes)
+    book_id = fields.Char("Notes")
