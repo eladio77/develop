@@ -14,7 +14,7 @@ class Checkout(models.Model):
         default=lambda s: s.env.user
     )
 
-    lines_id = fields.One2many(
+    line_ids = fields.One2many(
         comodel_name='library.checkout.line',
         inverse_name='checkout_id',
         string='Borrowed Books',
