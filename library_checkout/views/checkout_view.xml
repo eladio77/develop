@@ -25,7 +25,7 @@
                 </sheet>
             </form>
         </field>
-        </record>
+    </record>
 
     <record id="library_checkout_tree_view" model="ir.ui.view">
         <field name="name">library_checkout_tree</field>
