@@ -14,10 +14,11 @@ class Checkout(models.Model):
         default=lambda s: s.env.user
     )
 
-    request_date = fields.Date(default=lambda s: fields.Date.today())
-
-    lines_id = fields.One2many(
+        lines_id = fields.One2many(
         comodel_name='library.checkout.line',
         inverse_name='checkout_id',
         string='Borrowed Books',
         required=False)
+
+    request_date = fields.Date(default=lambda s: fields.Date.today())
+
